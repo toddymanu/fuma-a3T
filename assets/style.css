@@ -21,7 +21,11 @@ footer p{
     margin-top: 0,5rem;
 }
 #container {
-    display:flex ;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     padding: 4rem;
+     gap: 3rem;
 }
 .cartao {
     margin: 1rem 1rem;
@@ -51,11 +55,15 @@ footer p{
 .cartao__conteudo p {
     margin-top: 1rem;
     padding: 2rem;
+    margin-top: 4rem;
 }
 .cartao__conteudo__pergunta p {
     color: var(--text-color);
     font-weight: 500;
     backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 .cartao:hover .cartao__conteudo {
     transform: rotateY(180deg);
@@ -64,4 +72,7 @@ footer p{
     color: var(--card-back-color);
     font-weight: 700;
     backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
